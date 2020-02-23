@@ -3,7 +3,7 @@ window.addEventListener("load", function() {
     for(var i=0; i<toggleList.length; i++) {
         //Remove input toggle
         toggleList[i].type = 'hidden';
-        toggleList[i].value = 0;
+        if(!parseInt(toggleList[i].value)) toggleList[i].value = 0;
 
         //Create new toggle
         var toggle = document.createElement("div");
@@ -14,8 +14,12 @@ window.addEventListener("load", function() {
         toggle.style.borderRadius = '100px'; 
         toggle.style.marginTop = '5px'; 
         toggle.style.padding = '2px';
-        toggle.style.backgroundColor = '#D1D1D1';
         toggle.style.position = 'relative';
+        if(!parseInt(toggleList[i].value)) {
+            toggle.style.backgroundColor = '#D1D1D1';
+        } else {
+            toggle.style.backgroundColor = '#FF0000';
+        }
 
         //Create child toggle
         toggleChild = document.createElement("div");
@@ -27,8 +31,12 @@ window.addEventListener("load", function() {
         toggleChild.style.backgroundColor = '#FFFFFF';
         toggleChild.style.position = 'absolute';
         toggleChild.style.top = '2px';
-        toggleChild.style.left = '2px';
         toggleChild.style.transition = 'all 0.3s';
+        if(!parseInt(toggleList[i].value)) {
+            toggleChild.style.left = '2px';
+        } else {  
+            toggleChild.style.left = '22px';
+        }
 
         //Append Child
         toggle.appendChild(toggleChild);
