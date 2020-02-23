@@ -1,0 +1,4 @@
+input[type=toggle] {
+    visibility: hidden;
+    width: 40px;
+}
