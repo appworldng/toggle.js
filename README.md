@@ -4,7 +4,7 @@ A simple JavaScript input toggle control.
 ## NPM
 You can install directly via NPM to your project folder.
 ```
-npm install toggle-js
+npm install input-toggle-js
 ```
 
 ## CDN
