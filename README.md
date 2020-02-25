@@ -37,3 +37,12 @@ The default state for the toggle is **Off** (0). You can also set a default stat
 ```
 
 If you set a non-zero value, the state defaults to an On state:
+
+### Forms
+You can add your toggle button pretty much the way you would with any other input control into your form like so:
+
+```
+<form>
+  <input type="toggle" name="mytoggle">
+</form>
+```
