@@ -1,5 +1,9 @@
 # toggle.js
+
 A simple JavaScript input toggle control.
+
+<script type="text/javascript" src="toggle.js">
+<input type="toggle">
 
 ## NPM
 You can install directly via NPM to your project folder.
