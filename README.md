@@ -2,12 +2,6 @@
 
 A simple JavaScript input toggle control.
 
-<html>
-<script src="toggle.js">
-<link href="toggle.css" type="text/css" rel="stylesheet"/>
-<input type="toggle">
-</html>
-
 ## NPM
 
 You can install directly via NPM to your project folder.
