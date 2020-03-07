@@ -3,7 +3,7 @@
 A simple JavaScript input toggle control.
 
 <html>
-<script type="text/javascript" src="toggle.js">
+<script src="toggle.js">
 <input type="toggle">
 </html>
 
